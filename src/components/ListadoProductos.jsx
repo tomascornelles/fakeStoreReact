@@ -40,11 +40,11 @@ function ListadoProductos({ admin = false }) {
     );
   } else {
     return (
-      <>
+      <div className="gridView">
       {products.map((product) => (
         <ListadoItem key={product.id} product={product} />
       ))}
-      </>
+      </div>
     );
   }
 }
