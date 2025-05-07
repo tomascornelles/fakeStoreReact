@@ -15,7 +15,7 @@ function ListadoItem({ product }) {
       </p>
       <footer>
         <NavLink to={`/producto/${product.id}`}>
-          <h2>${product.price}</h2>
+          <h2>{new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR" }).format(product.price)}</h2>
         </NavLink>
       </footer>
     </article>
